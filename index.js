@@ -2,5 +2,11 @@ function enviarMensagem(nome, mensagem) {
 return `${nome}: ${mensagem}`;
 }
 
-// simulação simples
-console.log(enviarMensagem("Sistema", "Bem-vindo ao chat!"));
+function respostaBot(msg) {
+return "Bot: Recebi sua mensagem!";
+}
+
+const mensagem = enviarMensagem("Usuário", "Oi");
+
+console.log(mensagem);
+console.log(respostaBot(mensagem));
